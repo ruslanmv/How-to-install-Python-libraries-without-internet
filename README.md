@@ -148,7 +148,9 @@ c:\myenv\Scripts\activate.bat
 tar zxvf dependencies.tar.gz
 ```
 
+```
 cd dependencies 
+```
 
 ( in linux)
 
@@ -160,5 +162,11 @@ pip install * -f ./ --no-index
 
 ```
 for %x in (*.whl) do python -m pip install %x    
+```
+
+or 
+
+```
+for %x in (*.whl) do pip install --no-index --find-links . %cd%\%x   
 ```
 
