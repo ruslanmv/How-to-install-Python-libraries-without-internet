@@ -124,9 +124,9 @@ pip download -r requirements.txt -d "./dependencies"
 tar cvfz dependencies.tar.gz dependencies
 ```
 
-## On the system that has NO access to internet
+# On the system that has NO access to internet
 
-
+## Step 4: Install  Python libraries
 
 And, once you transfer the dependencies.tar.gz to the machine which does not have internet you would do:
 
@@ -141,8 +141,6 @@ then activate
 ```
 c:\myenv\Scripts\activate.bat
 ```
-
-
 
 ```
 tar zxvf dependencies.tar.gz
